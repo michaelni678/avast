@@ -1,0 +1,16 @@
+[package]
+name = "avast"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["derive"]
+
+[features]
+derive = []
+
+[dependencies]
+avast-derive = { path = "derive" }
+
+[dev-dependencies]
+avast = { path = ".", features = ["derive"] }
