@@ -8,9 +8,10 @@ members = ["derive"]
 
 [features]
 derive = []
+built-in = []
 
 [dependencies]
 avast-derive = { path = "derive" }
 
 [dev-dependencies]
-avast = { path = ".", features = ["derive"] }
+avast = { path = ".", features = ["derive", "built-in"] }
